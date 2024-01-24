@@ -1,0 +1,11 @@
+@use "fonts";
+
+.hello {
+  font-size: 5rem;
+  font-family: fonts.$rubikDoodleShadow;
+
+  margin: 0;
+  line-height: 1;
+
+  min-width: max-content;
+}

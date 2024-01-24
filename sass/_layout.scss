@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.layout__content {
+  padding: 20px;
+
+  //
+  // 1. Ensure the padding is shown when the content overflows its container.
+  //
+  display: inline-block;
+
+  //
+  // 2. Vertically and horizontally center the content.
+  //
+  margin: auto;
+}

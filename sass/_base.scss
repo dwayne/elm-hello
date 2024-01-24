@@ -1,0 +1,19 @@
+@use "colors";
+@use "fonts";
+
+//
+// Universal box sizing, see https://css-tricks.com/box-sizing/#aa-universal-box-sizing.
+//
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: fonts.$system;
+  background-color: colors.$gainsboro;
+}
+
+body {
+  margin: 0;
+}
