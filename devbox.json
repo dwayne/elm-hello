@@ -1,5 +1,6 @@
 {
   "packages": {
+    "brotli": "latest",
     "caddy": {
       "version": "latest",
       "disable_plugin": true
@@ -12,7 +13,8 @@
     "optipng": "latest",
     "shellcheck": "latest",
     "terser": "latest",
-    "xdg-utils": "latest"
+    "xdg-utils": "latest",
+    "zopfli": "latest"
   },
   "env": {
     "project": "$PWD",

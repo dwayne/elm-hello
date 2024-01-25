@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "brotli@latest": {
+      "last_modified": "2024-01-14T23:11:22Z",
+      "resolved": "github:NixOS/nixpkgs/5614bd58587f1337aca11d7b2bdfcca4ca44fccc#brotli",
+      "source": "devbox-search",
+      "version": "1.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/1hdi1r390fb68r5q0xr4xh1hz20swqaa-brotli-1.1.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/gj2a7vkfmcz7bhpagc61p0644zjkbjn7-brotli-1.1.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/ipd9wz7hn609c47dr4hx62xzd9i18rm4-brotli-1.1.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/4h1w1s2byp0y5v09y4a7q6j2mq4b0yg0-brotli-1.1.0"
+        }
+      }
+    },
     "caddy@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
       "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#caddy",
@@ -198,6 +218,26 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/51jay5z2f95972gyidah3zc4wpzsn957-xdg-utils-unstable-2022-11-06"
+        }
+      }
+    },
+    "zopfli@latest": {
+      "last_modified": "2024-01-19T20:59:21Z",
+      "resolved": "github:NixOS/nixpkgs/e5d1c87f5813afde2dda384ac807c57a105721cc#zopfli",
+      "source": "devbox-search",
+      "version": "1.0.3",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/xw1i5l45lv5k0mh91k6w3c3i3fnqnk0v-zopfli-1.0.3"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/8kb99rzs93qvwizzahr1ab53xsz4153h-zopfli-1.0.3"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/l2ifxf5197ikpa331c5rz9bmcix2ywl4-zopfli-1.0.3"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/f4yvjp8wqblikpnlzlijigmbaa779vmw-zopfli-1.0.3"
         }
       }
     }
