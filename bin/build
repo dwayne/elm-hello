@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 #
-# Usage: [optimize_css=0*|1] [optimize_js=0*|1|2|3] [compress=0*|1] build
+# Usage: [optimize_html=0*|1] [optimize_css=0*|1] [optimize_js=0*|1|2|3] [compress=0*|1] build
 #
 
 set -euo pipefail
 
+optimize_html="${optimize_html:-0}"
 optimize_css="${optimize_css:-0}"
 optimize_js="${optimize_js:-0}"
 compress="${compress:-0}"
@@ -26,7 +27,25 @@ build_images () {
 }
 
 build_html () {
-  cp "$src/html/"*.html "$out"
+  if [[ "$optimize_html" = 0 ]]; then
+    cp "$src/html/"*.html "$out"
+  else
+    html-minifier                         \
+      --collapse-boolean-attributes       \
+      --collapse-inline-tag-whitespace    \
+      --collapse-whitespace               \
+      --decode-entities                   \
+      --minify-js                         \
+      --remove-comments                   \
+      --remove-empty-attributes           \
+      --remove-redundant-attributes       \
+      --remove-script-type-attributes     \
+      --remove-style-link-type-attributes \
+      --remove-tag-whitespace             \
+      --file-ext html                     \
+      --input-dir "$src/html"             \
+      --output-dir "$out"
+  fi
 }
 
 build_css () {
